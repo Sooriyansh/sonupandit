@@ -1,0 +1,106 @@
+.marquee {
+  overflow: hidden;
+  border-top: 1px solid #F1C9CD;
+  border-bottom: 1px solid #F1C9CD;
+  background: #FFFDFC;
+}
+
+.viewport {
+  overflow: hidden;
+  padding-block: 0.9rem;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: puja-marquee-scroll 42s linear infinite;
+  will-change: transform;
+}
+
+.sequence {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.entry {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.name {
+  flex: none;
+  border: 1px solid #F1C9CD;
+  border-radius: 999px;
+  background: #fff;
+  padding: 0.55rem 1rem;
+  color: #8F1725;
+  font-family: var(--font-devanagari-sans), system-ui, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.separator {
+  flex: none;
+  color: #D9363E;
+  font-size: 0.625rem;
+  line-height: 1;
+}
+
+@keyframes puja-marquee-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (hover: hover) {
+  .viewport:hover .track,
+  .viewport:focus-within .track {
+    animation-play-state: paused;
+  }
+}
+
+@media (max-width: 639px) {
+  .viewport {
+    padding-block: 0.7rem;
+  }
+
+  .sequence,
+  .entry {
+    gap: 0.6rem;
+  }
+
+  .name {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8125rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    overflow-x: auto;
+  }
+
+  .viewport {
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+    scrollbar-color: #D9363E #F1C9CD;
+  }
+
+  .track {
+    width: max-content;
+    animation: none;
+    will-change: auto;
+  }
+
+  .sequence[aria-hidden="true"] {
+    display: none;
+  }
+}
