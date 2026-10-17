@@ -25,7 +25,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@types/three": "^0.186.0",
-    "eslint": "latest",
+    "eslint": "^9.0.0",
     "eslint-config-next": "^16.4.0",
     "tailwindcss": "latest",
     "typescript": "latest"
