@@ -8,9 +8,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const serviceRoutes = [...pujaServices, ...jyotishServices].map((service) => service.route);
 
   return [...base, ...serviceRoutes].map((path) => ({
-    url: `${site.siteUrl}${path}`,
-    lastModified: new Date("2026-10-08"),
-    changeFrequency: "weekly",
-    priority: path === "" ? 1 : 0.8
+    url: `${site.siteUrl}${path}`
   }));
 }

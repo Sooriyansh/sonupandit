@@ -5,6 +5,7 @@ import { Gallery } from "@/components/sections/Gallery";
 import { CTASection } from "@/components/sections/CTASection";
 
 import { media } from "@/data/media";
+import { site } from "@/data/site";
 import { createMetadata } from "@/utils/seo";
 
 const pageTitle = "पूजा एवं अनुष्ठान गैलरी | उज्जैन";
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     title: pageTitle,
     description: pageDescription,
     url: "/gallery",
-    siteName: "Puja Ujjain",
+    siteName: "पं. सोनू गुरु",
     images: [
       {
         url: media.pujaGroup,
@@ -68,7 +69,7 @@ const gallerySchema = {
   "@type": "CollectionPage",
   name: pageTitle,
   description: pageDescription,
-  url: "https://www.pujaujjain.in/gallery",
+  url: `${site.siteUrl}/gallery`,
   inLanguage: "hi-IN",
   about: {
     "@type": "Thing",

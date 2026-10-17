@@ -14,6 +14,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 
 import { jyotishServices } from "@/data/jyotishServices";
 import { media } from "@/data/media";
+import { site } from "@/data/site";
 import { createMetadata } from "@/utils/seo";
 
 const pageTitle = "ज्योतिष सेवाएँ उज्जैन | कुंडली विश्लेषण एवं परामर्श";
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
     title: pageTitle,
     description: pageDescription,
     url: "/jyotish",
-    siteName: "Puja Ujjain",
+    siteName: "पं. सोनू गुरु",
     images: [
       {
         url: media.cardServices,
@@ -111,7 +112,7 @@ const jyotishCollectionSchema = {
   "@type": "CollectionPage",
   name: pageTitle,
   description: pageDescription,
-  url: "https://www.pujaujjain.in/jyotish",
+  url: `${site.siteUrl}/jyotish`,
   inLanguage: "hi-IN",
   mainEntity: {
     "@type": "ItemList",

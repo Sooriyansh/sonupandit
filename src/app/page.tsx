@@ -16,38 +16,33 @@ import { ContactSection } from "@/components/sections/ContactSection";
 
 import { pujaServices } from "@/data/pujaServices";
 import { jyotishServices } from "@/data/jyotishServices";
+import { media } from "@/data/media";
+import { site } from "@/data/site";
 
-const SITE_URL = "https://www.pujaujjain.in";
+const SITE_URL = site.siteUrl;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
 
   title: {
     absolute:
-      "Puja Ujjain | Pandit Sumit Sharma Ji – Vedic Puja & Jyotish",
+      "पं. सोनू गुरु | उज्जैन में पूजा एवं ज्योतिष सेवाएँ",
   },
 
   description:
-    "Book Vedic puja and anushthan in Ujjain with Pandit Sumit Sharma Ji. Explore Kaal Sarp Dosh Puja, Mangal Bhat Poojan, Rudrabhishek, Navgrah Shanti and Jyotish consultation.",
+    "उज्जैन में पं. सोनू गुरु से मंगल भात पूजा, कालसर्प दोष पूजा, वैदिक अनुष्ठान और ज्योतिष परामर्श की जानकारी एवं बुकिंग के लिए संपर्क करें।",
 
   keywords: [
+    "पं. सोनू गुरु",
+    "Pandit Sonu Guru",
+    "पूजा उज्जैन",
     "Puja Ujjain",
-    "Pandit in Ujjain",
-    "Pandit Sumit Sharma Ji",
-    "Puja in Ujjain",
-    "Kaal Sarp Dosh Puja Ujjain",
-    "Kaal Sarp Puja Ujjain",
-    "Mangal Bhat Poojan Ujjain",
-    "Rudrabhishek in Ujjain",
-    "Navgrah Shanti Puja Ujjain",
-    "Pitra Dosh Puja Ujjain",
-    "Vedic Puja and Anushthan Ujjain",
-    "Jyotish in Ujjain",
-    "Kundli Consultation Ujjain",
-    "Kundli Matching",
-    "Grah Dosh Nivaran",
-    "Hindu Rituals Ujjain",
-    "Mahakal Puja Ujjain",
+    "मंगल भात पूजा उज्जैन",
+    "Mangal Bhat Puja Ujjain",
+    "मंगल दोष पूजा उज्जैन",
+    "Mangal Dosh Puja Ujjain",
+    "कालसर्प दोष पूजा उज्जैन",
+    "ज्योतिष परामर्श उज्जैन",
   ],
 
   alternates: {
@@ -56,20 +51,27 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-    locale: "en_IN",
+    locale: "hi_IN",
     url: SITE_URL,
-    siteName: "Puja Ujjain",
-    title:
-      "Puja Ujjain | Pandit Sumit Sharma Ji – Vedic Puja & Jyotish",
+    siteName: "पं. सोनू गुरु",
+    title: "पं. सोनू गुरु | उज्जैन में पूजा एवं ज्योतिष सेवाएँ",
     description:
-      "Explore Vedic puja, religious rituals, dosh nivaran and Jyotish consultation services in Ujjain, Madhya Pradesh.",
+      "उज्जैन में पं. सोनू गुरु से मंगल भात पूजा, कालसर्प दोष पूजा, वैदिक अनुष्ठान और ज्योतिष परामर्श की जानकारी एवं बुकिंग के लिए संपर्क करें।",
+    images: [
+      {
+        url: media.cardFront,
+        width: 1200,
+        height: 900,
+        alt: "पं. सोनू गुरु का परिचय"
+      }
+    ]
   },
 
   twitter: {
-    card: "summary",
-    title: "Puja Ujjain | Pandit Sumit Sharma Ji",
-    description:
-      "Vedic Puja, Anushthan, Dosh Nivaran and Jyotish consultation in Ujjain.",
+    card: "summary_large_image",
+    title: "पं. सोनू गुरु | उज्जैन में पूजा एवं ज्योतिष सेवाएँ",
+    description: "उज्जैन में पूजा, अनुष्ठान और ज्योतिष परामर्श की जानकारी एवं बुकिंग।",
+    images: [media.cardFront]
   },
 
   robots: {
@@ -88,8 +90,8 @@ export const metadata: Metadata = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Puja Ujjain",
-  alternateName: "Pandit Sumit Sharma Ji",
+  name: "पं. सोनू गुरु",
+  alternateName: "Pandit Sonu Guru",
   url: SITE_URL,
   inLanguage: ["en-IN", "hi-IN"],
 };

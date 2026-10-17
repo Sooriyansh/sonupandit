@@ -8,6 +8,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 
 import { pujaServices } from "@/data/pujaServices";
 import { media } from "@/data/media";
+import { site } from "@/data/site";
 import { createMetadata } from "@/utils/seo";
 
 const pageTitle = "पूजा एवं अनुष्ठान उज्जैन | कालसर्प दोष पूजा और वैदिक पूजा";
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     title: pageTitle,
     description: pageDescription,
     url: "/puja",
-    siteName: "Puja Ujjain",
+    siteName: "पं. सोनू गुरु",
     images: [
       {
         url: media.pujaGroup,
@@ -85,7 +86,7 @@ const pujaCollectionSchema = {
   name: pageTitle,
   description: pageDescription,
   inLanguage: "hi-IN",
-  url: "https://www.pujaujjain.in/puja",
+  url: `${site.siteUrl}/puja`,
   about: {
     "@type": "Thing",
     name: "वैदिक पूजा एवं अनुष्ठान",

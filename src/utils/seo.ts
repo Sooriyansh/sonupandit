@@ -45,7 +45,8 @@ export function createMetadata({ title, description, path = "/", keywords = [] }
     twitter: {
       card: "summary_large_image",
       title,
-      description
+      description,
+      images: ["/images/pandit-sonu-guru-card-front.jpeg"]
     }
   };
 }

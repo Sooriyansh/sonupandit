@@ -7,7 +7,7 @@ export const site = {
   email: "ujjainsonu@gmail.com",
   location: "श्री महाकालेश्वर, उज्जैन (म.प्र.)",
   whatsapp: "https://wa.me/918889887696",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://panditsonuguru.com",
+  siteUrl: "https://www.ujjainmangaldosh.in",
   copyright: "© 2026 पं. सोनू गुरु. सर्वाधिकार सुरक्षित।"
 };
 

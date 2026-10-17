@@ -15,7 +15,15 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const service = pujaServices.find((item) => item.slug === slug);
-  if (!service) return {};
+  if (!service) {
+    return {
+      title: "पेज नहीं मिला | पं. सोनू गुरु",
+      robots: {
+        index: false,
+        follow: true
+      }
+    };
+  }
   return createMetadata({
     title: service.seoTitle,
     description: service.seoDescription,
