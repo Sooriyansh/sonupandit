@@ -20,6 +20,8 @@ const bookingSchema = new Schema(
   { timestamps: true }
 );
 
+bookingSchema.index({ createdAt: -1, _id: -1 });
+
 export type BookingDocument = InferSchemaType<typeof bookingSchema>;
 
 export const Booking: Model<BookingDocument> =

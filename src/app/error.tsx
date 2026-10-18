@@ -1,5 +1,7 @@
 "use client";
 
+"use client";
+
 import { AlertCircle, RefreshCw } from "lucide-react";
 
 export default function Error({ reset }: { reset: () => void }) {

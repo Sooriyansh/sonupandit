@@ -154,7 +154,7 @@ export function Gallery({
                     <video
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                       controls
-                      preload="metadata"
+                      preload="none"
                       playsInline
                       aria-label={item.alt}
                     >

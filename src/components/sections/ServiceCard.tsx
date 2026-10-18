@@ -14,14 +14,14 @@ import type { MouseEvent } from "react";
 import type { SyntheticEvent } from "react";
 import type { ServiceItem } from "@/types/service";
 
-const serviceImageFallback = "/images/pandit.jpeg";
+const serviceImageFallback = "/images/optimized/pandit.webp";
 
 const serviceImages: Record<string, string> = {
-  "kundli-analysis": "/images/Kundil.png",
-  "vivah-kundli-milan": "/images/vivha.png",
-  "janam-kundli": "/images/janamkundall.png",
-  "grah-dosh-analysis": "/images/image copy 5.png",
-  "jyotish-paramarsh": "/images/pandit.jpeg",
+  "kundli-analysis": "/images/optimized/Kundil.webp",
+  "vivah-kundli-milan": "/images/optimized/vivha.webp",
+  "janam-kundli": "/images/optimized/Janamkundall.webp",
+  "grah-dosh-analysis": "/images/optimized/image copy 5.webp",
+  "jyotish-paramarsh": "/images/optimized/pandit.webp",
 };
 
 type ServiceCardProps = {

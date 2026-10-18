@@ -35,7 +35,7 @@ export function createMetadata({ title, description, path = "/", keywords = [] }
       type: "website",
       images: [
         {
-          url: "/images/pandit-sonu-guru-card-front.jpeg",
+          url: "/images/optimized/pandit-sonu-guru-card-front.webp",
           width: 1200,
           height: 900,
           alt: "पं. सोनू गुरु उज्जैन"
@@ -46,7 +46,7 @@ export function createMetadata({ title, description, path = "/", keywords = [] }
       card: "summary_large_image",
       title,
       description,
-      images: ["/images/pandit-sonu-guru-card-front.jpeg"]
+      images: ["/images/optimized/pandit-sonu-guru-card-front.webp"]
     }
   };
 }

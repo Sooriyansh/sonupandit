@@ -6,7 +6,39 @@ import gsap from "gsap";
 export function HomeVideo() {
   const sectionRef = useRef<HTMLElement | null>(null);
   const videoCardRef = useRef<HTMLDivElement | null>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   const glowRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    const source = video?.querySelector("source");
+    if (!video || !source) return;
+
+    const loadVideo = () => {
+      if (!source.src) {
+        source.src = source.dataset.src ?? "";
+        video.load();
+      }
+    };
+
+    if (!("IntersectionObserver" in window)) {
+      loadVideo();
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          loadVideo();
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px" },
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     let cleanup: (() => void) | undefined;
@@ -167,17 +199,18 @@ export function HomeVideo() {
             className="relative overflow-hidden rounded-2xl bg-[#FFFDFC] shadow-[0_30px_90px_rgba(74,37,23,0.20)] ring-1 ring-black/[0.05] sm:rounded-[2rem]"
           >
             <video
+              ref={videoRef}
               aria-label="पंडित जी द्वारा पूजा"
               autoPlay
               loop
               muted
               playsInline
-              preload="metadata"
-              poster="/images/pooja-panfit.jpeg"
+              preload="none"
+              poster="/images/optimized/pooja-panfit.webp"
               className="block aspect-[9/16] w-full object-cover"
             >
               <source
-                src="/images/pandit-pooja.mp4"
+                data-src="/images/pandit-pooja.mp4"
                 type="video/mp4"
               />
             </video>

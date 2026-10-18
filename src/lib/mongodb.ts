@@ -15,17 +15,22 @@ export async function connectMongo() {
     throw new Error("MONGODB_URI environment variable is not configured.");
   }
 
-  if (global.mongooseCache?.conn) {
-    return global.mongooseCache.conn;
-  }
+  const cache = global.mongooseCache!;
 
-  if (!global.mongooseCache?.promise) {
-    global.mongooseCache!.promise = mongoose.connect(MONGODB_URI, {
+  if (cache.conn) return cache.conn;
+
+  if (!cache.promise) {
+    cache.promise = mongoose.connect(MONGODB_URI, {
       bufferCommands: false,
       dbName: "sonupandit"
     });
   }
 
-  global.mongooseCache!.conn = await global.mongooseCache!.promise;
-  return global.mongooseCache!.conn;
+  try {
+    cache.conn = await cache.promise;
+    return cache.conn;
+  } catch (error) {
+    cache.promise = null;
+    throw error;
+  }
 }

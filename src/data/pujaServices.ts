@@ -22,7 +22,7 @@ export const pujaServices: ServiceItem[] = [
   {
     title: "कालसर्प दोष पूजा",
     slug: "kaal-sarp-dosh-puja",
-    image: "/images/ksp.png",
+    image: "/images/optimized/ksp.webp",
     shortDescription: "विधिवत वैदिक पद्धति से कालसर्प दोष निवारण पूजा।",
     description:
       "उज्जैन में श्रद्धा और वैदिक विधि के साथ कालसर्प दोष से संबंधित पूजा-अनुष्ठान संपन्न कराए जाते हैं।",
@@ -42,7 +42,7 @@ export const pujaServices: ServiceItem[] = [
   {
     title: "मंगल भात पूजन",
     slug: "mangal-dosh-puja",
-    image: "/images/mbp.png",
+    image: "/images/optimized/mbp.webp",
     shortDescription: "उज्जैन में मंगल भात पूजन की वैदिक विधि और पूजा व्यवस्था।",
     description: "उज्जैन में श्रद्धा और वैदिक विधि के साथ मंगल भात पूजन की व्यवस्था की जाती है।",
     icon: "Sun",
@@ -59,7 +59,7 @@ export const pujaServices: ServiceItem[] = [
   {
     title: "पितृ दोष पूजा",
     slug: "pitri-dosh-puja",
-    image: "/images/image copy.png",
+    image: "/images/optimized/image copy.webp",
     shortDescription: "पितृ दोष शांति हेतु श्रद्धा और विधि से अनुष्ठान।",
     description: "पितृ दोष शांति से संबंधित पूजा उज्जैन में वैदिक विधि से संपन्न कराई जाती है।",
     icon: "Shield",
@@ -76,7 +76,7 @@ export const pujaServices: ServiceItem[] = [
   {
     title: "नवग्रह शांति पूजा",
     slug: "navgrah-shanti",
-    image: "/images/image copy 3.png",
+    image: "/images/optimized/image copy 3.webp",
     shortDescription: "नवग्रहों की शांति के लिए मंत्र-जाप और पूजा।",
     description: "नवग्रह शांति पूजा ग्रहों से जुड़े वैदिक अनुष्ठान के रूप में कराई जाती है।",
     icon: "Circle",
@@ -93,7 +93,7 @@ export const pujaServices: ServiceItem[] = [
   {
     title: "महामृत्युंजय जाप",
     slug: "mahamrityunjay-jaap",
-    image: "/images/WhatsApp Image 2026-10-07 at 5.46.20 PM.jpeg",
+    image: "/images/optimized/WhatsApp Image 2026-10-07 at 5.46.20 PM.webp",
     shortDescription: "महामृत्युंजय मंत्र जाप और वैदिक अनुष्ठान।",
     description: "महामृत्युंजय जाप श्रद्धा, संकल्प और विधिवत मंत्रोच्चार के साथ कराया जाता है।",
     icon: "Flame",
@@ -110,7 +110,7 @@ export const pujaServices: ServiceItem[] = [
   {
     title: "रुद्राभिषेक",
     slug: "rudrabhishek",
-    image: "/images/b3.png",
+    image: "/images/optimized/b3.webp",
     shortDescription: "भगवान शिव का विधिवत रुद्राभिषेक।",
     description: "श्री महाकालेश्वर, उज्जैन की पावन भूमि में शिव आराधना से जुड़ा रुद्राभिषेक।",
     icon: "Droplets",
@@ -127,7 +127,7 @@ export const pujaServices: ServiceItem[] = [
   {
     title: "ग्रहण दोष निवारण",
     slug: "grahan-dosh",
-    image: "/images/Ngs.png",
+    image: "/images/optimized/Ngs.webp",
     shortDescription: "ग्रहण दोष से संबंधित वैदिक शांति पूजा।",
     description: "ग्रहण दोष निवारण के लिए पूजा, मंत्र-जाप और वैदिक मार्गदर्शन।",
     icon: "Moon",
@@ -144,7 +144,7 @@ export const pujaServices: ServiceItem[] = [
   {
     title: "वास्तु शांति",
     slug: "vastu-shanti",
-    image: "/images/image copy 2.png",
+    image: "/images/optimized/image copy 2.webp",
     shortDescription: "घर, कार्यालय और स्थान के लिए वास्तु शांति पूजा।",
     description: "वास्तु शांति पूजा स्थान की धार्मिक शांति और मंगलकामना के लिए की जाती है।",
     icon: "Home",
@@ -161,7 +161,7 @@ export const pujaServices: ServiceItem[] = [
   {
     title: "अन्य वैदिक अनुष्ठान",
     slug: "anya-vaidik-anushthan",
-    image: "/images/image copy 4.png",
+    image: "/images/optimized/image copy 4.webp",
     shortDescription: "नवचंडी यज्ञ, मां बगलामुखी अनुष्ठान और मांगलिक कार्य।",
     description: "विभिन्न मांगलिक और धार्मिक कार्य वैदिक पद्धति से संपन्न कराए जाते हैं।",
     icon: "Star",

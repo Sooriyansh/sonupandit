@@ -22,7 +22,7 @@ export const jyotishServices: ServiceItem[] = [
   {
     title: "कुंडली विश्लेषण",
     slug: "kundli-analysis",
-    image: "/images/Kundil.png",
+    image: "/images/optimized/Kundil.webp",
     shortDescription: "जन्म विवरण के आधार पर कुंडली संबंधी परामर्श।",
     description: "जन्म तिथि, समय और स्थान के आधार पर कुंडली से जुड़े विषयों पर मार्गदर्शन।",
     icon: "CircleDot",
@@ -39,7 +39,7 @@ export const jyotishServices: ServiceItem[] = [
   {
     title: "विवाह कुंडली मिलान",
     slug: "vivah-kundli-milan",
-    image: "/images/vivha.png",
+    image: "/images/optimized/vivha.webp",
     shortDescription: "विवाह हेतु कुंडली मिलान और ज्योतिषीय मार्गदर्शन।",
     description: "दोनों पक्षों की जन्म जानकारी के आधार पर विवाह कुंडली मिलान का परामर्श।",
     icon: "HeartHandshake",
@@ -56,7 +56,7 @@ export const jyotishServices: ServiceItem[] = [
   {
     title: "जन्म कुंडली",
     slug: "janam-kundli",
-    image: "/images/Janamkundall.png",
+    image: "/images/optimized/Janamkundall.webp",
     shortDescription: "जन्म पत्रिका बनाना और देखना।",
     description: "जन्म पत्रिका बनाई व देखी जाती है।",
     icon: "ScrollText",
@@ -73,7 +73,7 @@ export const jyotishServices: ServiceItem[] = [
   {
     title: "ग्रह-दोष विश्लेषण",
     slug: "grah-dosh-analysis",
-    image: "/images/image copy 5.png",
+    image: "/images/optimized/image copy 5.webp",
     shortDescription: "कुंडली में बताए गए ग्रह-दोषों पर परामर्श।",
     description: "ग्रह-दोष से जुड़े विषयों पर ज्योतिषीय चर्चा और पूजा संबंधी मार्गदर्शन।",
     icon: "Orbit",
@@ -90,7 +90,7 @@ export const jyotishServices: ServiceItem[] = [
   {
     title: "ज्योतिष परामर्श",
     slug: "jyotish-paramarsh",
-    image: "/images/pandit.jpeg",
+    image: "/images/optimized/pandit.webp",
     shortDescription: "व्यक्तिगत प्रश्नों पर ज्योतिषीय परामर्श।",
     description: "जीवन के महत्वपूर्ण विषयों पर सम्मानपूर्ण ज्योतिषीय मार्गदर्शन।",
     icon: "MessageCircle",

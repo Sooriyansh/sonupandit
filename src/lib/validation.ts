@@ -1,3 +1,5 @@
+import { bookingServices } from "@/data/site";
+
 export type BookingInput = {
   name: string;
   phone: string;
@@ -28,12 +30,21 @@ export function validateBooking(payload: Record<string, unknown>) {
   };
 
   const errors: Record<string, string> = {};
+  const parsedDate = new Date(`${data.date}T00:00:00.000Z`);
 
   if (data.name.length < 2) errors.name = "कृपया नाम दर्ज करें।";
   if (!/^[0-9+\-\s()]{8,20}$/.test(data.phone)) errors.phone = "कृपया सही मोबाइल नंबर दर्ज करें।";
   if (data.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) errors.email = "कृपया सही ईमेल दर्ज करें।";
-  if (!data.service) errors.service = "कृपया पूजा / सेवा चुनें।";
-  if (!data.date) errors.date = "कृपया तिथि चुनें।";
+  if (!bookingServices.includes(data.service)) {
+    errors.service = "कृपया सूची में से सही पूजा / सेवा चुनें।";
+  }
+  if (
+    !/^\d{4}-\d{2}-\d{2}$/.test(data.date) ||
+    Number.isNaN(parsedDate.getTime()) ||
+    parsedDate.toISOString().slice(0, 10) !== data.date
+  ) {
+    errors.date = "कृपया सही तिथि दर्ज करें।";
+  }
 
   return { data, errors, isValid: Object.keys(errors).length === 0 };
 }

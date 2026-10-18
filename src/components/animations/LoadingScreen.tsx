@@ -85,9 +85,9 @@ export function LoadingScreen() {
             A Sacred Experience
           </p>
 
-          <h1 className="mt-4 font-serif text-3xl font-medium tracking-wide text-[#B91C2C] sm:text-4xl">
+          <p className="mt-4 font-serif text-3xl font-medium tracking-wide text-[#B91C2C] sm:text-4xl">
             मंगल पूजा
-          </h1>
+          </p>
 
           <div className="mt-4 flex items-center justify-center gap-3">
             <span className="h-px w-9 bg-[#D9363E]/60" />
