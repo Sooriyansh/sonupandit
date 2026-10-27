@@ -10,7 +10,7 @@ export function CTASection() {
   return (
     <FadeUp as="section" className="relative overflow-hidden bg-[#FFFDFC] px-4 py-16 sm:px-6 sm:py-20 lg:py-28">
       <div className="container-shell">
-        <div className="group relative isolate overflow-hidden rounded-[28px] border border-[#F1C9CD] bg-[#B91C2C] px-6 py-14 text-center shadow-[0_18px_48px_rgba(143,23,37,0.12)] sm:px-10 sm:py-16 lg:px-16 lg:py-20">
+        <div className="cta-panel group relative isolate overflow-hidden rounded-[28px] border border-[#F1C9CD] bg-[#B91C2C] px-6 py-14 text-center shadow-[0_18px_48px_rgba(143,23,37,0.12)] sm:px-10 sm:py-16 lg:px-16 lg:py-20">
           {/* Background ornamentation */}
           <div
             aria-hidden="true"

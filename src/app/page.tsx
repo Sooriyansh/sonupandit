@@ -157,9 +157,9 @@ export default function Home() {
 
       <PujaMarquee />
 
-      <HomeVideo />
-
       <AboutPreview />
+
+      <HomeVideo />
 
       <ServiceGrid
         label="वैदिक सेवाएँ"
