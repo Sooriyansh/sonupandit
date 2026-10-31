@@ -157,7 +157,7 @@ export default function Home() {
 
       <PujaMarquee />
 
-      <AboutPreview />
+      
 
       <HomeVideo />
 
@@ -183,13 +183,17 @@ export default function Home() {
 
       <Gallery limit={6} />
 
-      <ClientReviews/>
-
-      <FAQSection />
 
       <ContactSection />
 
+      <AboutPreview />
+
       <CTASection />
+
+      <ClientReviews/>
+      <FAQSection />
+
+
     </>
   );
 }

@@ -1,4 +1,4 @@
-
+﻿
 "use client";
 
 import Link from "next/link";
@@ -12,6 +12,7 @@ import { pujaServices } from "@/data/pujaServices";
 import { jyotishServices } from "@/data/jyotishServices";
 import { MegaMenu } from "@/components/layout/MegaMenu";
 import { MobileNav } from "@/components/layout/MobileNav";
+import { GoogleTranslate } from "@/components/layout/GoogleTranslate";
 
 export function Navbar() {
   const headerRef = useRef<HTMLElement>(null);
@@ -143,7 +144,7 @@ export function Navbar() {
         {/* Brand */}
         <Link
           href="/"
-          aria-label={`${site.nameHindi} - होम`}
+          aria-label={`${site.nameHindi} - à¤¹à¥‹à¤®`}
           className="
             navbar-brand group flex min-w-0 shrink items-center gap-2.5
             rounded-full outline-none
@@ -169,7 +170,7 @@ export function Navbar() {
               aria-hidden="true"
               className="absolute inset-[4px] rounded-full border border-white/30"
             />
-            <span className="relative font-serif">ॐ</span>
+            <span className="relative font-serif">à¥</span>
             <span
               aria-hidden="true"
               className="
@@ -212,22 +213,22 @@ export function Navbar() {
 
         {/* Desktop navigation */}
         <nav
-          aria-label="मुख्य नेविगेशन"
+          aria-label="à¤®à¥à¤–à¥à¤¯ à¤¨à¥‡à¤µà¤¿à¤—à¥‡à¤¶à¤¨"
           className="hidden items-center gap-0.5 xl:flex"
         >
           <Link href="/" className={navLinkClass("/")}>
-            होम
+            à¤¹à¥‹à¤®
             <span aria-hidden="true" className={underlineClass("/")} />
           </Link>
 
           <Link href="/about" className={navLinkClass("/about")}>
-            पंडित जी के बारे में
+            à¤ªà¤‚à¤¡à¤¿à¤¤ à¤œà¥€ à¤•à¥‡ à¤¬à¤¾à¤°à¥‡ à¤®à¥‡à¤‚
             <span aria-hidden="true" className={underlineClass("/about")} />
           </Link>
 
           <div className="navbar-item">
             <MegaMenu
-              label="पूजा एवं अनुष्ठान"
+              label="à¤ªà¥‚à¤œà¤¾ à¤à¤µà¤‚ à¤…à¤¨à¥à¤·à¥à¤ à¤¾à¤¨"
               href="/puja"
               items={pujaServices}
             />
@@ -235,19 +236,19 @@ export function Navbar() {
 
           <div className="navbar-item">
             <MegaMenu
-              label="ज्योतिष सेवाएँ"
+              label="à¤œà¥à¤¯à¥‹à¤¤à¤¿à¤· à¤¸à¥‡à¤µà¤¾à¤à¤"
               href="/jyotish"
               items={jyotishServices}
             />
           </div>
 
           <Link href="/gallery" className={navLinkClass("/gallery")}>
-            गैलरी
+            à¤—à¥ˆà¤²à¤°à¥€
             <span aria-hidden="true" className={underlineClass("/gallery")} />
           </Link>
 
           <Link href="/online-puja" className={navLinkClass("/online-puja")}>
-            ऑनलाइन पूजा
+            à¤‘à¤¨à¤²à¤¾à¤‡à¤¨ à¤ªà¥‚à¤œà¤¾
             <span
               aria-hidden="true"
               className={underlineClass("/online-puja")}
@@ -255,10 +256,13 @@ export function Navbar() {
           </Link>
 
           <Link href="/contact" className={navLinkClass("/contact")}>
-            संपर्क
+            à¤¸à¤‚à¤ªà¤°à¥à¤•
             <span aria-hidden="true" className={underlineClass("/contact")} />
           </Link>
         </nav>
+
+        {/* Google Translate */}
+        <GoogleTranslate />
 
         {/* Booking CTA */}
         <Link
@@ -285,7 +289,7 @@ export function Navbar() {
             className="text-[#FFF1F2]"
           />
 
-          <span>पूजा बुक करें</span>
+          <span>à¤ªà¥‚à¤œà¤¾ à¤¬à¥à¤• à¤•à¤°à¥‡à¤‚</span>
 
           <ArrowUpRight
             size={14}
