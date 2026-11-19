@@ -5,7 +5,7 @@ export const site = {
   phonePrimary: "8889887696",
   phoneSecondary: "7697923725",
   email: "ujjainsonu@gmail.com",
-  location: "श्री महाकालेश्वर, उज्जैन (म.प्र.)",
+  location: "Mangalnath Mandir, Agar Rd, Ujjain, Madhya Pradesh 456006",
   whatsapp: "https://wa.me/918889887696",
   siteUrl: "https://www.ujjainmangaldosh.in",
   copyright: "© 2026 पं. सोनू गुरु. सर्वाधिकार सुरक्षित।"
