@@ -12,7 +12,6 @@ import { pujaServices } from "@/data/pujaServices";
 import { jyotishServices } from "@/data/jyotishServices";
 import { MegaMenu } from "@/components/layout/MegaMenu";
 import { MobileNav } from "@/components/layout/MobileNav";
-import { GoogleTranslate } from "@/components/layout/GoogleTranslate";
 
 export function Navbar() {
   const headerRef = useRef<HTMLElement>(null);
@@ -260,9 +259,6 @@ export function Navbar() {
             <span aria-hidden="true" className={underlineClass("/contact")} />
           </Link>
         </nav>
-
-        {/* Google Translate */}
-        <GoogleTranslate />
 
         {/* Booking CTA */}
         <Link
